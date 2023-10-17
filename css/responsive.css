@@ -1,0 +1,97 @@
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .content.container {
+    width: 95%;
+  }
+
+  aside {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-radius: 35px 0 0 35px;
+    width: fit-content;
+    padding: .75rem .75rem;
+  }
+
+  aside img {
+    width: 3.5rem;
+  }
+
+  aside h1,
+  aside h4 {
+    display: none;
+  }
+
+  aside .aside-list {
+    flex-direction: column;
+    font-size: 1.25rem;
+  }
+
+  aside .aside-list li {
+    padding: .4rem .525rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  header {
+    padding: .75rem 1.5rem;
+  }
+
+  .nav-lists {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4.75rem;
+    left: 0;
+    width: 100%;
+    background-color: #765827;
+    gap: 1.25rem;
+    padding: 1rem;
+  }
+
+  .nav-lists.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .hamburger {
+    font-size: 2rem;
+    display: block;
+  }
+
+  .content #about,
+  .content #creator {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #about h2,
+  #about p,
+  #creator h2,
+  #creator p {
+    text-align: center;
+    margin-top: .5rem;
+  }
+  
+  #creator .left-creator {
+    order: 2;
+  }
+  #creator .right-creator {
+    order: 1;
+  }
+
+  #about .right-about,
+  #creator .left-creator {
+    width: 90%;
+  }
+}
